@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+  font-family: "Signika", sans-serif;
+}
+/* ESTILOS GENERALES */
+:root {
+  --border-radius: 5px;
+}
+
+/* PARCHE DE IMAGENES */
+
+.logo_copa_mobile {
+  display: none;
+}
+.logo_mobile {
+  display: none;
+}
+
+#login {
+  background: url(/Imagenes/Messi_BackGround.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#login_main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login_form {
+  width: 364px;
+  height: 301px;
+  background: #ffffff;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius);
+  padding: 36px;
+}
+
+/* TITLE */
+.login_h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #000000;
+}
+
+/* BUTTON */
+
+.btn-iniciosesion {
+  background: #374785;
+  width: 294px;
+  height: 38px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 0px 0px 0px 5px;
+  text-align: center;
+}
+.footer_logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+/* MAP STYLE */
+.navbar {
+  z-index: 150;
+}
+
+.logo_guayerd {
+  padding-right: 20px;
+}
+.logo_la_scaloneta {
+  padding-right: 50px;
+}
+
+#logout-button {
+  background: #374785;
+  border: 1px solid #24305e;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+#logout-button:hover {
+  background: #66a5da;
+  border: 1px solid #000000;
+}
+
+/* SELECT */
+
+.map-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.form-select {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: auto;
+  width: 300px;
+}
+.select_option_hidden {
+  color: white;
+}
+
+/* JUGADORES STYLE */
+
+.main_container h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+h1 span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #119dd8;
+  padding-right: 1vh;
+}
+
+/* JUGADORES STYLE */
+.card .img-wrapper {
+  height: 250px;
+  overflow: hidden;
+}
+.dorsal {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.card {
+  background: #f5f5f5;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.card-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #212529;
+}
+.card-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #212529;
+}
+/* PHONE STYLE */
+@media only screen and (max-width: 500px) {
+  #login {
+    padding: 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  #login_main {
+    height: 100%;
+  }
+  #login_form {
+    width: 364px;
+    height: 301px;
+    background: #ffffff;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+  }
+  .logo_copa_mobile {
+    display: flex;
+  }
+
+  .footer_logo {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+  }
+
+  /* MAP PHONE STYLES */
+
+  .logo_guayerd {
+    display: none;
+  }
+  .logo_mobile {
+    display: flex;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo_la_scaloneta {
+    padding: 15px;
+  }
+
+  #logout-button {
+    width: 100%;
+  }
+  .form-select {
+    top: 14%;
+    width: 50%;
+  }
+  /* JUGADORES PHONE STYLE */
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
